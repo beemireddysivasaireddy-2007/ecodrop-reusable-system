@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FAF6ED;
+    color: #2D2A26;
+  }
+}
+
+.font-craft {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-hand {
+  font-family: 'Caveat', cursive;
+}
+
+.font-code {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Handmade / Paper & Tactile Craft Utilities */
+.paper-card {
+  background-color: #FFFFFF;
+  border: 2px solid #2D2A26;
+  box-shadow: 4px 4px 0px #2D2A26;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.paper-card-sm {
+  background-color: #FFFFFF;
+  border: 1.5px solid #2D2A26;
+  box-shadow: 3px 3px 0px #2D2A26;
+  transition: all 0.2s ease;
+}
+
+.paper-card-sm:hover,
+.paper-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #2D2A26;
+}
+
+.paper-card-active:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #2D2A26;
+}
+
+.paper-btn {
+  border: 2px solid #2D2A26;
+  box-shadow: 3px 3px 0px #2D2A26;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.paper-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #2D2A26;
+}
+
+.paper-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #2D2A26;
+}
+
+/* Washi Tape styling */
+.washi-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 90px;
+  height: 22px;
+  background-color: rgba(229, 169, 60, 0.65);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  backdrop-filter: blur(1px);
+  z-index: 10;
+  border-left: 2px dashed rgba(255,255,255,0.7);
+  border-right: 2px dashed rgba(255,255,255,0.7);
+}
+
+.washi-tape-green {
+  background-color: rgba(141, 163, 130, 0.75);
+}
+
+.washi-tape-coral {
+  background-color: rgba(217, 119, 70, 0.65);
+}
+
+/* Rubber Stamp Effect */
+.rubber-stamp {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: 3px double #C85A32;
+  color: #C85A32;
+  transform: rotate(-4deg);
+  border-radius: 6px;
+  letter-spacing: 0.08em;
+  mask-image: radial-gradient(circle, black 80%, rgba(0,0,0,0.5) 100%);
+}
+
+.rubber-stamp-green {
+  border: 3px double #245A32;
+  color: #245A32;
+}
+
+/* Subtle Notebook / Grid Lines */
+.notebook-grid {
+  background-image: 
+    radial-gradient(#D6CEBE 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Rough torn edge feel */
+.sketch-border {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
